@@ -41,6 +41,7 @@ import {
   DataJamaah2,
   Royalti,
   Maps,
+  FormulirEdit,
 
 
 } from '../pages';
@@ -152,7 +153,14 @@ export default function Router() {
       />
 
 
+      <Stack.Screen
+        name="FormulirEdit"
+        component={FormulirEdit}
+        options={{
+          headerShown: false,
 
+        }}
+      />
       <Stack.Screen
         name="Datajamaah"
         component={DataJamaah}

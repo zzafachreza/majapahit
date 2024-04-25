@@ -128,6 +128,16 @@ export default function ArtikelDetail({ navigation, route }) {
                         <Text style={{
                             fontFamily: fonts.secondary[800],
                             fontSize: 12,
+                        }}>Status</Text>
+                        <Text style={{
+                            fontFamily: fonts.secondary[600],
+                            fontSize: 12,
+                        }}>{item.status_formulir}</Text>
+                    </View>
+                    <View style={{ flex: 1, marginTop: 20, }}>
+                        <Text style={{
+                            fontFamily: fonts.secondary[800],
+                            fontSize: 12,
                         }}>Nomor Seri</Text>
                         <Text style={{
                             fontFamily: fonts.secondary[600],
@@ -158,7 +168,8 @@ export default function ArtikelDetail({ navigation, route }) {
                         height: 300,
                         resizeMode: 'contain'
                     }} />
-
+                    <MyGap jarak={20} />
+                    <MyButton warna={colors.primary} onPress={() => navigation.replace("FormulirEdit", item)} title="Edit Formulir" Icons="create-outline" />
                 </View>
 
 

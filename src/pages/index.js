@@ -37,6 +37,7 @@ import DataJamaah from './DataJamaah';
 import DataJamaah2 from './DataJamaah/ndex2';
 import Royalti from './Royalti';
 import Maps from './Maps';
+import FormulirEdit from './Menu/FormulirEdit';
 
 
 
@@ -72,9 +73,9 @@ export {
   Royalti,
   Maps,
 
-  
-  
-  
+  FormulirEdit,
+
+
 
 
 
